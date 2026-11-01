@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: the title is unique to this page and under 60 characters; the description is under 160 characters -->
+    <title>Adopt a Dog or Puppy in Pretoria | Paws Shelter</title>
+    <meta name="description" content="Meet the dogs and puppies waiting for a forever home at Paws Animal Shelter in Pretoria. Search our adoptable pets and start your adoption today.">
+    <meta name="keywords" content="adopt a dog, puppies for adoption, rescue dogs Pretoria, pet adoption, adoptable pets">
+    <meta name="author" content="Paws Shelter">
+    <meta name="robots" content="index, follow">
+    <!-- SEO: the canonical link tells search engines which URL is the main version of this page -->
+    <link rel="canonical" href="https://paws-shelter.netlify.app/pets.html">
+    <!-- Social media: Open Graph and Twitter tags control the title, text and image shown when this page is shared -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Paws Animal Shelter">
+    <meta property="og:title" content="Adopt a Dog or Puppy in Pretoria | Paws Shelter">
+    <meta property="og:description" content="Meet the dogs and puppies waiting for a forever home at Paws Animal Shelter in Pretoria. Search our adoptable pets and start your adoption today.">
+    <meta property="og:url" content="https://paws-shelter.netlify.app/pets.html">
+    <meta property="og:image" content="https://paws-shelter.netlify.app/_images/images/pets/hero-dogs-running.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Security: the Content Security Policy only lets this page load scripts, styles and images from this site and the trusted sources the map needs -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https://cdnjs.cloudflare.com https://tile.openstreetmap.org https://*.tile.openstreetmap.org; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css_assets/stylesheet.css">
+    <!-- Page speed: every script uses "defer" so it never blocks the page from displaying -->
+    <script src="js/script.js" defer></script>
+    <script src="js/pets.js" defer></script>
+</head>
+<body>
+
+    <!-- Accessibility: lets keyboard and screen-reader users jump past the menu straight to the page content -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ==== Header: logo, main navigation and the Donate button; identical on every page so visitors always know where they are ==== -->
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="_images/images/pets/paws-logo.png" alt="Paws Animal Shelter logo"/>
+            <div>
+                <p class="site-name">Paws Shelter</p>
+                <p class="tagline">Every Paw Deserves a Warm Home</p>
+            </div>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pets.html" class="active" aria-current="page">Adopt</a></li>
+                <li><a href="enquiries.html">Get Involved</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="enquiries.html?type=donate" class="donate-button">Donate</a>
+    </header>
+
+    <main id="main-content" class="page-content">
+
+        <section class="page-header">
+            <h1>Adoptable Pets</h1>
+            <p>Meet the dogs and puppies currently looking for their forever home at our Pretoria shelter. Found a match? <a href="enquiries.html?type=adopt">Send us an enquiry</a>.</p>
+        </section>
+
+        <!-- SEARCH TOOLS: js/pets.js reads these three controls and filters, sorts and redraws the pet cards without reloading the page -->
+        <div class="pet-controls" role="search" aria-label="Search and filter adoptable pets">
+            <div>
+                <label for="pet-search">Search by name or breed</label>
+                <input type="search" id="pet-search" placeholder="e.g. Beagle" maxlength="40" autocomplete="off"/>
+            </div>
+            <div>
+                <label for="pet-filter">Age group</label>
+                <select id="pet-filter">
+                    <option value="all">All ages</option>
+                    <option value="puppy">Puppies (under 1 year)</option>
+                    <option value="adult">1 year and older</option>
+                </select>
+            </div>
+            <div>
+                <label for="pet-sort">Sort by</label>
+                <select id="pet-sort">
+                    <option value="name">Name (A to Z)</option>
+                    <option value="youngest">Youngest first</option>
+                    <option value="oldest">Oldest first</option>
+                </select>
+            </div>
+        </div>
+        <p id="pet-count" class="pet-count" aria-live="polite"></p>
+
+        <!-- PET GRID: these cards are plain HTML so search engines and visitors without JavaScript still see every pet; pets.js replaces them with cards built from data/pets.json -->
+        <section class="meet-our-friends">
+            <h2 class="visually-hidden">Available pets</h2>
+            <div class="pet-grid" id="pet-grid">
+                <article class="pet-card" data-id="golden" data-name="Golden" data-breed="Golden Retriever" data-months="3" data-age="3 months" data-img="_images/images/pets/golden.jpg" data-alt="Golden, a Golden Retriever puppy" data-blurb="A playful Golden Retriever puppy ready to learn the basics and join an active, loving family." data-status="available">
+                    <img src="_images/images/pets/golden.jpg" alt="Golden, a Golden Retriever puppy" loading="lazy"/>
+                    <h3>Golden</h3>
+                    <p>Golden Retriever &bull; 3 months &bull; Pretoria</p>
+                </article>
+                <article class="pet-card" data-id="rusty" data-name="Rusty" data-breed="Mixed Breed" data-months="2" data-age="2 months" data-img="_images/images/pets/rusty.jpg" data-alt="Rusty, a mixed breed puppy" data-blurb="A tiny mixed breed pup, full of curiosity and looking for patient new owners." data-status="available">
+                    <img src="_images/images/pets/rusty.jpg" alt="Rusty, a mixed breed puppy" loading="lazy"/>
+                    <h3>Rusty</h3>
+                    <p>Mixed Breed &bull; 2 months &bull; Pretoria</p>
+                </article>
+                <article class="pet-card" data-id="lucky" data-name="Lucky" data-breed="Golden Retriever" data-months="3" data-age="3 months" data-img="_images/images/pets/lucky.jpg" data-alt="Lucky, a Golden Retriever puppy" data-blurb="A friendly Golden Retriever puppy who is ready to start a new life in a forever home." data-status="available">
+                    <img src="_images/images/pets/lucky.jpg" alt="Lucky, a Golden Retriever puppy" loading="lazy"/>
+                    <h3>Lucky</h3>
+                    <p>Golden Retriever &bull; 3 months &bull; Pretoria</p>
+                </article>
+                <article class="pet-card" data-id="max" data-name="Max" data-breed="Labrador Mix" data-months="24" data-age="2 years" data-img="_images/images/pets/max.jpg" data-alt="Max, a Labrador mix" data-blurb="A sociable Labrador mix who has grown into a steady, affectionate companion." data-status="available">
+                    <img src="_images/images/pets/max.jpg" alt="Max, a Labrador mix" loading="lazy"/>
+                    <h3>Max</h3>
+                    <p>Labrador Mix &bull; 2 years &bull; Pretoria</p>
+                </article>
+                <article class="pet-card" data-id="buddy" data-name="Buddy" data-breed="Beagle Mix" data-months="12" data-age="1 year" data-img="_images/images/pets/buddy.jpg" data-alt="Buddy, a Beagle mix" data-blurb="A young Beagle mix with plenty of energy who would thrive with daily walks and playtime." data-status="available">
+                    <img src="_images/images/pets/buddy.jpg" alt="Buddy, a Beagle mix" loading="lazy"/>
+                    <h3>Buddy</h3>
+                    <p>Beagle Mix &bull; 1 year &bull; Pretoria</p>
+                </article>
+                <article class="pet-card" data-id="bella" data-name="Bella" data-breed="Cavalier King Charles" data-months="24" data-age="2 years" data-img="_images/images/pets/bella.jpg" data-alt="Bella, a Cavalier King Charles Spaniel" data-blurb="A gentle Cavalier King Charles Spaniel who enjoys attention and would suit a calm, loving home." data-status="available">
+                    <img src="_images/images/pets/bella.jpg" alt="Bella, a Cavalier King Charles Spaniel" loading="lazy"/>
+                    <h3>Bella</h3>
+                    <p>Cavalier King Charles &bull; 2 years &bull; Pretoria</p>
+                </article>
+            </div>
+            <p id="pet-empty" class="pet-empty" hidden>No pets match your search. Try a different name, breed or age group.</p>
+        </section>
+
+    </main>
+
+    <!-- LIGHTBOX / MODAL: opens when a pet photo is clicked; shows a larger photo, details, an enquiry link and a WhatsApp share link -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" hidden>
+        <div class="lightbox-content">
+            <button type="button" class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+            <button type="button" class="lb-nav lb-prev" id="lb-prev" aria-label="Previous pet">&#8249;</button>
+            <button type="button" class="lb-nav lb-next" id="lb-next" aria-label="Next pet">&#8250;</button>
+            <figure>
+                <img id="lb-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""/>
+                <figcaption>
+                    <h2 id="lb-title"></h2>
+                    <p class="lb-meta" id="lb-meta"></p>
+                    <p id="lb-text"></p>
+                    <div class="lb-actions">
+                        <a id="lb-adopt" class="btn-primary" href="enquiries.html?type=adopt">Enquire about adopting</a>
+                        <a id="lb-share" class="btn-outline" href="https://wa.me/" target="_blank" rel="noopener noreferrer">Share on WhatsApp</a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- ====== Footer: copyright, repeat of the main links (helps internal linking) and the shelter's email ====== -->
+    <footer>
+        <p>&copy; 2026 Paws Shelter. All rights reserved.</p>
+        <p class="footer-links"><a href="index.html">Home</a> <a href="about.html">About Us</a> <a href="pets.html">Adopt</a> <a href="enquiries.html">Get Involved</a> <a href="contacts.html">Contact</a> <a href="mailto:info@pawsshelter.co.za">info@pawsshelter.co.za</a></p>
+    </footer>
+
+</body>
+</html>

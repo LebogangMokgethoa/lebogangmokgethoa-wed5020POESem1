@@ -1,0 +1,70 @@
+{
+  "pets": [
+    {
+      "id": "golden",
+      "name": "Golden",
+      "breed": "Golden Retriever",
+      "months": 3,
+      "age": "3 months",
+      "img": "_images/images/pets/golden.jpg",
+      "alt": "Golden, a Golden Retriever puppy",
+      "blurb": "A playful Golden Retriever puppy ready to learn the basics and join an active, loving family.",
+      "status": "available"
+    },
+    {
+      "id": "rusty",
+      "name": "Rusty",
+      "breed": "Mixed Breed",
+      "months": 2,
+      "age": "2 months",
+      "img": "_images/images/pets/rusty.jpg",
+      "alt": "Rusty, a mixed breed puppy",
+      "blurb": "A tiny mixed breed pup, full of curiosity and looking for patient new owners.",
+      "status": "available"
+    },
+    {
+      "id": "lucky",
+      "name": "Lucky",
+      "breed": "Golden Retriever",
+      "months": 3,
+      "age": "3 months",
+      "img": "_images/images/pets/lucky.jpg",
+      "alt": "Lucky, a Golden Retriever puppy",
+      "blurb": "A friendly Golden Retriever puppy who is ready to start a new life in a forever home.",
+      "status": "available"
+    },
+    {
+      "id": "max",
+      "name": "Max",
+      "breed": "Labrador Mix",
+      "months": 24,
+      "age": "2 years",
+      "img": "_images/images/pets/max.jpg",
+      "alt": "Max, a Labrador mix",
+      "blurb": "A sociable Labrador mix who has grown into a steady, affectionate companion.",
+      "status": "available"
+    },
+    {
+      "id": "buddy",
+      "name": "Buddy",
+      "breed": "Beagle Mix",
+      "months": 12,
+      "age": "1 year",
+      "img": "_images/images/pets/buddy.jpg",
+      "alt": "Buddy, a Beagle mix",
+      "blurb": "A young Beagle mix with plenty of energy who would thrive with daily walks and playtime.",
+      "status": "available"
+    },
+    {
+      "id": "bella",
+      "name": "Bella",
+      "breed": "Cavalier King Charles",
+      "months": 24,
+      "age": "2 years",
+      "img": "_images/images/pets/bella.jpg",
+      "alt": "Bella, a Cavalier King Charles Spaniel",
+      "blurb": "A gentle Cavalier King Charles Spaniel who enjoys attention and would suit a calm, loving home.",
+      "status": "available"
+    }
+  ]
+}

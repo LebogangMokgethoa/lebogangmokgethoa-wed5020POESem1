@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: the title is unique to this page and under 60 characters; the description is under 160 characters -->
+    <title>Home | Paws Animal Shelter</title>
+    <meta name="description" content="Paws Animal Shelter rescues, cares for and rehomes abandoned dogs and puppies in Pretoria. Adopt a pet, volunteer or donate today.">
+    <meta name="keywords" content="animal shelter Pretoria, pet adoption, adopt a dog, rescue dogs, puppies for adoption, volunteer, donate">
+    <meta name="author" content="Paws Shelter">
+    <meta name="robots" content="index, follow">
+    <!-- SEO: the canonical link tells search engines which URL is the main version of this page -->
+    <link rel="canonical" href="https://paws-shelter.netlify.app/index.html">
+    <!-- Social media: Open Graph and Twitter tags control the title, text and image shown when this page is shared -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Paws Animal Shelter">
+    <meta property="og:title" content="Home | Paws Animal Shelter">
+    <meta property="og:description" content="Paws Animal Shelter rescues, cares for and rehomes abandoned dogs and puppies in Pretoria. Adopt a pet, volunteer or donate today.">
+    <meta property="og:url" content="https://paws-shelter.netlify.app/index.html">
+    <meta property="og:image" content="https://paws-shelter.netlify.app/_images/images/pets/hero-dogs-running.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Security: the Content Security Policy only lets this page load scripts, styles and images from this site and the trusted sources the map needs -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https://cdnjs.cloudflare.com https://tile.openstreetmap.org https://*.tile.openstreetmap.org; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css_assets/stylesheet.css">
+    <!-- Local SEO: structured data tells search engines this is an animal shelter, where it is and how to contact it -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AnimalShelter",
+  "name": "Paws Animal Shelter",
+  "url": "https://paws-shelter.netlify.app/",
+  "logo": "https://paws-shelter.netlify.app/_images/images/pets/paws-logo.png",
+  "image": "https://paws-shelter.netlify.app/_images/images/pets/hero-dogs-running.jpg",
+  "description": "Paws Animal Shelter rescues, cares for and rehomes abandoned dogs and puppies in Pretoria.",
+  "email": "info@pawsshelter.co.za",
+  "telephone": "+27113128976",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12 Rescue Road",
+    "addressLocality": "Pretoria",
+    "addressRegion": "Gauteng",
+    "addressCountry": "ZA"
+  },
+  "areaServed": [
+    "Pretoria",
+    "Johannesburg"
+  ]
+}
+    </script>
+    <!-- Page speed: every script uses "defer" so it never blocks the page from displaying -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Accessibility: lets keyboard and screen-reader users jump past the menu straight to the page content -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ==== Header: logo, main navigation and the Donate button; identical on every page so visitors always know where they are ==== -->
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="_images/images/pets/paws-logo.png" alt="Paws Animal Shelter logo"/>
+            <div>
+                <p class="site-name">Paws Shelter</p>
+                <p class="tagline">Every Paw Deserves a Warm Home</p>
+            </div>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pets.html">Adopt</a></li>
+                <li><a href="enquiries.html">Get Involved</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="enquiries.html?type=donate" class="donate-button">Donate</a>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO: the first section visitors see. It holds this page's only <h1> (good for SEO) and the two main calls to action -->
+        <section class="hero">
+            <div class="hero-text">
+                <span class="paws-icon" aria-hidden="true">🐾</span>
+                <h1>A Warm Home.<br/>A Better Life.</h1>
+                <p>We rescue, care for and rehome abandoned dogs and puppies in Pretoria. Together, we give every paw the love they deserve.</p>
+                <div class="hero-buttons">
+                    <a href="pets.html" class="btn-primary">Adopt a Pet</a>
+                    <a href="enquiries.html?type=donate" class="btn-secondary">Donate Now</a>
+                </div>
+            </div>
+            <img src="_images/images/pets/hero-dogs-running.jpg" alt="Three dogs running happily outdoors" class="hero-image" fetchpriority="high"/>
+        </section>
+
+        <!-- RESCUE. LOVE. REHOME.: the shelter's slogan and the four things it does; each card is a reusable "feature-card" -->
+        <section class="rescue-love-rehome reveal">
+            <img src="_images/images/pets/paws-hero-banner.jpg" alt="Three puppies sitting together" class="rescue-image" loading="lazy"/>
+
+            <div class="slogan-block">
+                <h2>Rescue. Love. Rehome.</h2>
+                <p>Every rescue. Every heart. Every home.</p>
+            </div>
+
+            <div class="feature-cards">
+                <article class="feature-card">
+                    <h3>Rescue</h3>
+                    <p>We save pets in need.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Care</h3>
+                    <p>We provide love, medical care &amp; a safe home.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Rehome</h3>
+                    <p>We find forever homes for our paws.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Community</h3>
+                    <p>Together, we create better futures.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- MEET OUR FRIENDS: a preview of the dogs available for adoption; the button leads to the full searchable list on the Adopt page -->
+        <section class="meet-our-friends reveal">
+            <div class="section-header">
+                <div>
+                    <h2>Meet Our Friends</h2>
+                    <p>They're waiting for a loving home like yours.</p>
+                </div>
+                <a href="pets.html" class="btn-outline">View All Pets</a>
+            </div>
+
+            <div class="pet-grid">
+                <article class="pet-card">
+                    <img src="_images/images/pets/golden.jpg" alt="Golden, a Golden Retriever puppy" loading="lazy"/>
+                    <h3>Golden</h3>
+                    <p>Golden Retriever &bull; 3 months &bull; Pretoria</p>
+                </article>
+                <article class="pet-card">
+                    <img src="_images/images/pets/rusty.jpg" alt="Rusty, a mixed breed puppy" loading="lazy"/>
+                    <h3>Rusty</h3>
+                    <p>Mixed Breed &bull; 2 months &bull; Pretoria</p>
+                </article>
+                <article class="pet-card">
+                    <img src="_images/images/pets/lucky.jpg" alt="Lucky, a Golden Retriever puppy" loading="lazy"/>
+                    <h3>Lucky</h3>
+                    <p>Golden Retriever &bull; 3 months &bull; Pretoria</p>
+                </article>
+                <article class="pet-card">
+                    <img src="_images/images/pets/max.jpg" alt="Max, a Labrador mix" loading="lazy"/>
+                    <h3>Max</h3>
+                    <p>Labrador Mix &bull; 2 years &bull; Pretoria</p>
+                </article>
+                <article class="pet-card">
+                    <img src="_images/images/pets/buddy.jpg" alt="Buddy, a Beagle mix" loading="lazy"/>
+                    <h3>Buddy</h3>
+                    <p>Beagle Mix &bull; 1 year &bull; Pretoria</p>
+                </article>
+                <article class="pet-card">
+                    <img src="_images/images/pets/bella.jpg" alt="Bella, a Cavalier King Charles Spaniel" loading="lazy"/>
+                    <h3>Bella</h3>
+                    <p>Cavalier King Charles &bull; 2 years &bull; Pretoria</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====== Footer: copyright, repeat of the main links (helps internal linking) and the shelter's email ====== -->
+    <footer>
+        <p>&copy; 2026 Paws Shelter. All rights reserved.</p>
+        <p class="footer-links"><a href="index.html">Home</a> <a href="about.html">About Us</a> <a href="pets.html">Adopt</a> <a href="enquiries.html">Get Involved</a> <a href="contacts.html">Contact</a> <a href="mailto:info@pawsshelter.co.za">info@pawsshelter.co.za</a></p>
+    </footer>
+
+</body>
+</html>

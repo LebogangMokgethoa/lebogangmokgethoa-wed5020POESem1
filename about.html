@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: the title is unique to this page and under 60 characters; the description is under 160 characters -->
+    <title>About Us | Paws Animal Shelter</title>
+    <meta name="description" content="Learn about Paws Animal Shelter in Pretoria: our history, our mission to rescue and rehome animals, and the team who care for them every day.">
+    <meta name="keywords" content="about Paws Shelter, animal shelter Pretoria, animal rescue mission, shelter team, adoption FAQ">
+    <meta name="author" content="Paws Shelter">
+    <meta name="robots" content="index, follow">
+    <!-- SEO: the canonical link tells search engines which URL is the main version of this page -->
+    <link rel="canonical" href="https://paws-shelter.netlify.app/about.html">
+    <!-- Social media: Open Graph and Twitter tags control the title, text and image shown when this page is shared -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Paws Animal Shelter">
+    <meta property="og:title" content="About Us | Paws Animal Shelter">
+    <meta property="og:description" content="Learn about Paws Animal Shelter in Pretoria: our history, our mission to rescue and rehome animals, and the team who care for them every day.">
+    <meta property="og:url" content="https://paws-shelter.netlify.app/about.html">
+    <meta property="og:image" content="https://paws-shelter.netlify.app/_images/images/pets/hero-dogs-running.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Security: the Content Security Policy only lets this page load scripts, styles and images from this site and the trusted sources the map needs -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https://cdnjs.cloudflare.com https://tile.openstreetmap.org https://*.tile.openstreetmap.org; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css_assets/stylesheet.css">
+    <!-- Page speed: every script uses "defer" so it never blocks the page from displaying -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Accessibility: lets keyboard and screen-reader users jump past the menu straight to the page content -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ==== Header: logo, main navigation and the Donate button; identical on every page so visitors always know where they are ==== -->
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="_images/images/pets/paws-logo.png" alt="Paws Animal Shelter logo"/>
+            <div>
+                <p class="site-name">Paws Shelter</p>
+                <p class="tagline">Every Paw Deserves a Warm Home</p>
+            </div>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active" aria-current="page">About Us</a></li>
+                <li><a href="pets.html">Adopt</a></li>
+                <li><a href="enquiries.html">Get Involved</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="enquiries.html?type=donate" class="donate-button">Donate</a>
+    </header>
+
+    <main id="main-content" class="page-content">
+
+        <!-- PAGE HEADER: the <h1> names the page; each content block below uses an <h2> so the heading order stays logical -->
+        <section class="page-header">
+            <h1>About Us</h1>
+            <p>Learn more about our mission, our history, and the people behind Paws Shelter.</p>
+        </section>
+
+        <section class="content-block reveal">
+            <h2>Our History</h2>
+            <p>Paws Shelter is a community-based non-profit organisation established to rescue, shelter, and rehome stray, abandoned, and surrendered animals within the local area. Since our founding, we have relied on community donations and volunteer support to provide veterinary care, food, and safe housing to animals in need.</p>
+        </section>
+
+        <section class="content-block reveal">
+            <h2>Mission and Vision</h2>
+            <p><strong>Mission:</strong> To rescue, rehabilitate, and rehome animals while promoting responsible pet ownership.</p>
+            <p><strong>Vision:</strong> A community in which every companion animal has access to a safe, loving, and permanent home.</p>
+        </section>
+
+        <section class="content-block reveal">
+            <h2>Our Team</h2>
+            <p>Our shelter is run by a dedicated team of staff and volunteers who care for the animals every day, ensuring each one receives the attention, medical care, and love they deserve while waiting for their forever home.</p>
+        </section>
+
+        <!-- FAQ ACCORDION: each question is a <button>; js/script.js opens one answer at a time and updates aria-expanded for screen readers -->
+        <section class="content-block reveal">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <h3 class="accordion-heading">
+                    <button type="button" class="accordion-trigger" id="faq-btn-1" aria-expanded="false" aria-controls="faq-1">How does adoption work?</button>
+                </h3>
+                <div class="accordion-panel" id="faq-1" role="region" aria-labelledby="faq-btn-1"><div><p>Browse our adoptable pets, send us an enquiry, then visit us to meet your match. Once we are both happy, we complete the adoption paperwork and you can take your new family member home.</p></div></div>
+                <h3 class="accordion-heading">
+                    <button type="button" class="accordion-trigger" id="faq-btn-2" aria-expanded="false" aria-controls="faq-2">Can I volunteer at the shelter?</button>
+                </h3>
+                <div class="accordion-panel" id="faq-2" role="region" aria-labelledby="faq-btn-2"><div><p>Yes. Volunteers help with walking, feeding, cleaning and community events. Use the Get Involved form to tell us when you are available.</p></div></div>
+                <h3 class="accordion-heading">
+                    <button type="button" class="accordion-trigger" id="faq-btn-3" aria-expanded="false" aria-controls="faq-3">How are donations used?</button>
+                </h3>
+                <div class="accordion-panel" id="faq-3" role="region" aria-labelledby="faq-btn-3"><div><p>Donations go towards food, veterinary care and safe housing for the animals in our care.</p></div></div>
+                <h3 class="accordion-heading">
+                    <button type="button" class="accordion-trigger" id="faq-btn-4" aria-expanded="false" aria-controls="faq-4">Where are you based?</button>
+                </h3>
+                <div class="accordion-panel" id="faq-4" role="region" aria-labelledby="faq-btn-4"><div><p>Our main shelter is in Pretoria and our satellite adoption centre is in Johannesburg. See the Contact page for addresses and a map.</p></div></div>
+            </div>
+        </section>
+
+        <section class="content-block reveal">
+            <h2>Ready to Help?</h2>
+            <p>Meet our <a href="pets.html">adoptable dogs and puppies</a>, or <a href="enquiries.html">get involved</a> as a volunteer, sponsor or donor.</p>
+        </section>
+
+    </main>
+
+    <!-- ====== Footer: copyright, repeat of the main links (helps internal linking) and the shelter's email ====== -->
+    <footer>
+        <p>&copy; 2026 Paws Shelter. All rights reserved.</p>
+        <p class="footer-links"><a href="index.html">Home</a> <a href="about.html">About Us</a> <a href="pets.html">Adopt</a> <a href="enquiries.html">Get Involved</a> <a href="contacts.html">Contact</a> <a href="mailto:info@pawsshelter.co.za">info@pawsshelter.co.za</a></p>
+    </footer>
+
+</body>
+</html>

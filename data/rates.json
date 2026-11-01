@@ -1,0 +1,34 @@
+{
+  "responseDays": 2,
+  "adopt": {
+    "puppyFee": 1200,
+    "adultFee": 850,
+    "includes": "covers sterilisation, vaccinations and a microchip"
+  },
+  "volunteer": {
+    "cost": 0,
+    "openSpots": {
+      "Weekday mornings": 3,
+      "Weekday afternoons": 2,
+      "Weekend mornings": 5,
+      "Weekend afternoons": 4
+    }
+  },
+  "sponsor": {
+    "bronze": {
+      "label": "Bronze",
+      "monthly": 150,
+      "covers": "a month of food for one animal"
+    },
+    "silver": {
+      "label": "Silver",
+      "monthly": 300,
+      "covers": "food and basic care for one animal"
+    },
+    "gold": {
+      "label": "Gold",
+      "monthly": 600,
+      "covers": "food, care and vet visits for one animal"
+    }
+  }
+}

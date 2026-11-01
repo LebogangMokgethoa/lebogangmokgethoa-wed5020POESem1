@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: the title is unique to this page and under 60 characters; the description is under 160 characters -->
+    <title>Adopt, Volunteer or Sponsor | Paws Shelter</title>
+    <meta name="description" content="Enquire about adopting, volunteering, sponsoring or donating to Paws Animal Shelter in Pretoria and get costs and availability straight away.">
+    <meta name="keywords" content="adopt a pet, volunteer animal shelter, sponsor a pet, donate to animal shelter, Pretoria">
+    <meta name="author" content="Paws Shelter">
+    <meta name="robots" content="index, follow">
+    <!-- SEO: the canonical link tells search engines which URL is the main version of this page -->
+    <link rel="canonical" href="https://paws-shelter.netlify.app/enquiries.html">
+    <!-- Social media: Open Graph and Twitter tags control the title, text and image shown when this page is shared -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Paws Animal Shelter">
+    <meta property="og:title" content="Adopt, Volunteer or Sponsor | Paws Shelter">
+    <meta property="og:description" content="Enquire about adopting, volunteering, sponsoring or donating to Paws Animal Shelter in Pretoria and get costs and availability straight away.">
+    <meta property="og:url" content="https://paws-shelter.netlify.app/enquiries.html">
+    <meta property="og:image" content="https://paws-shelter.netlify.app/_images/images/pets/hero-dogs-running.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Security: the Content Security Policy only lets this page load scripts, styles and images from this site and the trusted sources the map needs -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https://cdnjs.cloudflare.com https://tile.openstreetmap.org https://*.tile.openstreetmap.org; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css_assets/stylesheet.css">
+    <!-- Page speed: every script uses "defer" so it never blocks the page from displaying -->
+    <script src="js/script.js" defer></script>
+    <script src="js/forms.js" defer></script>
+</head>
+<body>
+
+    <!-- Accessibility: lets keyboard and screen-reader users jump past the menu straight to the page content -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ==== Header: logo, main navigation and the Donate button; identical on every page so visitors always know where they are ==== -->
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="_images/images/pets/paws-logo.png" alt="Paws Animal Shelter logo"/>
+            <div>
+                <p class="site-name">Paws Shelter</p>
+                <p class="tagline">Every Paw Deserves a Warm Home</p>
+            </div>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pets.html">Adopt</a></li>
+                <li><a href="enquiries.html" class="active" aria-current="page">Get Involved</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="enquiries.html?type=donate" class="donate-button">Donate</a>
+    </header>
+
+    <main id="main-content" class="page-content">
+
+        <section class="page-header">
+            <h1>Get Involved</h1>
+            <p>Interested in adopting, volunteering, sponsoring or donating? Fill in the form below and you will see costs and availability straight away.</p>
+        </section>
+
+        <!-- ENQUIRY FORM: js/forms.js validates every field, sends the form in the background (AJAX) and then shows a personal response.
+             action="/" and data-netlify="true" let Netlify Forms store each submission once the site is deployed on Netlify. -->
+        <section class="content-block reveal">
+            <h2>Send Us an Enquiry</h2>
+            <form id="enquiry-form" name="enquiry" action="/" method="post" data-netlify="true" data-netlify-honeypot="bot-field" data-validate novalidate>
+                <input type="hidden" name="form-name" value="enquiry"/>
+                <!-- Security: hidden "honeypot" field. People never see it, so if it is filled in the sender is a spam bot and is ignored -->
+                <p class="hp" aria-hidden="true"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"/></label></p>
+
+                <div class="form-row">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" data-label="Full Name" data-rule="name" required maxlength="60" autocomplete="name"/>
+                    <span class="error-message" id="name-error" aria-live="polite"></span>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" data-label="Email Address" data-rule="email" required maxlength="100" autocomplete="email"/>
+                    <span class="error-message" id="email-error" aria-live="polite"></span>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" data-label="Phone Number" data-rule="phone" required maxlength="20" autocomplete="tel" inputmode="tel"/>
+                    <small class="hint" id="phone-hint">South African number, e.g. 012 345 6789 or 082 123 4567</small>
+                    <span class="error-message" id="phone-error" aria-live="polite"></span>
+                </div>
+                <div class="form-row">
+                    <label for="enquiry-type">I'm interested in:</label>
+                    <select id="enquiry-type" name="enquiry-type" data-label="I'm interested in:" required><option value="">-- Please choose --</option><option value="adopt">Adopting a pet</option><option value="volunteer">Volunteering</option><option value="sponsor">Sponsoring an animal</option><option value="donate">Making a donation</option></select>
+                    <span class="error-message" id="enquiry-type-error" aria-live="polite"></span>
+                </div>
+
+                <!-- EXTRA QUESTIONS: only the group that matches the chosen enquiry type is shown (and enabled); forms.js swaps them -->
+                <fieldset class="type-fields" data-for="adopt" hidden disabled>
+                    <legend>About your adoption</legend>
+                <div class="form-row">
+                    <label for="pet">Which pet are you interested in?</label>
+                    <select id="pet" name="pet" data-label="Which pet are you interested in?" required><option value="">-- Please choose --</option><option value="not-sure">Not sure yet</option><option value="Golden">Golden - Golden Retriever (3 months)</option><option value="Rusty">Rusty - Mixed Breed (2 months)</option><option value="Lucky">Lucky - Golden Retriever (3 months)</option><option value="Max">Max - Labrador Mix (2 years)</option><option value="Buddy">Buddy - Beagle Mix (1 year)</option><option value="Bella">Bella - Cavalier King Charles (2 years)</option></select>
+                    <span class="error-message" id="pet-error" aria-live="polite"></span>
+                </div>
+                </fieldset>
+                <fieldset class="type-fields" data-for="volunteer" hidden disabled>
+                    <legend>About your volunteering</legend>
+                <div class="form-row">
+                    <label for="availability">When are you available?</label>
+                    <select id="availability" name="availability" data-label="When are you available?" required><option value="">-- Please choose --</option><option value="Weekday mornings">Weekday mornings</option><option value="Weekday afternoons">Weekday afternoons</option><option value="Weekend mornings">Weekend mornings</option><option value="Weekend afternoons">Weekend afternoons</option></select>
+                    <span class="error-message" id="availability-error" aria-live="polite"></span>
+                </div>
+                </fieldset>
+                <fieldset class="type-fields" data-for="sponsor" hidden disabled>
+                    <legend>About your sponsorship</legend>
+                <div class="form-row">
+                    <label for="tier">Sponsorship level</label>
+                    <select id="tier" name="tier" data-label="Sponsorship level" required><option value="">-- Please choose --</option><option value="bronze">Bronze</option><option value="silver">Silver</option><option value="gold">Gold</option></select>
+                    <span class="error-message" id="tier-error" aria-live="polite"></span>
+                </div>
+                </fieldset>
+                <fieldset class="type-fields" data-for="donate" hidden disabled>
+                    <legend>About your donation</legend>
+                <div class="form-row">
+                    <label for="amount">Donation amount (Rand)</label>
+                    <input type="number" id="amount" name="amount" data-label="Donation amount (Rand)" data-rule="amount" required min="20" max="100000" step="1" inputmode="numeric"/>
+                    <small class="hint" id="amount-hint">Minimum R20</small>
+                    <span class="error-message" id="amount-error" aria-live="polite"></span>
+                </div>
+                </fieldset>
+
+                <div class="form-row">
+                    <label for="date">Preferred visit or start date</label>
+                    <input type="date" id="date" name="date" data-label="Preferred visit or start date" data-rule="date" required />
+                    <span class="error-message" id="date-error" aria-live="polite"></span>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" data-label="Message" data-rule="message" required minlength="10" maxlength="500" data-counter></textarea>
+                    <span class="char-count" id="message-count" aria-hidden="true"></span>
+                    <span class="error-message" id="message-error" aria-live="polite"></span>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="consent" name="consent" data-label="Consent" required/>
+                    <label for="consent">I agree that Paws Shelter may contact me about this enquiry.</label>
+                </div>
+                <span class="error-message" id="consent-error" aria-live="polite"></span>
+
+                <button type="submit">Submit Enquiry</button>
+            </form>
+
+            <!-- RESPONSE: filled in by forms.js with the cost and availability that match the enquiry -->
+            <div id="enquiry-response" class="response-panel" role="status" aria-live="polite" tabindex="-1" hidden></div>
+        </section>
+
+    </main>
+
+    <!-- ====== Footer: copyright, repeat of the main links (helps internal linking) and the shelter's email ====== -->
+    <footer>
+        <p>&copy; 2026 Paws Shelter. All rights reserved.</p>
+        <p class="footer-links"><a href="index.html">Home</a> <a href="about.html">About Us</a> <a href="pets.html">Adopt</a> <a href="enquiries.html">Get Involved</a> <a href="contacts.html">Contact</a> <a href="mailto:info@pawsshelter.co.za">info@pawsshelter.co.za</a></p>
+    </footer>
+
+</body>
+</html>

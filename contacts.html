@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: the title is unique to this page and under 60 characters; the description is under 160 characters -->
+    <title>Contact Paws Animal Shelter | Pretoria &amp; Joburg</title>
+    <meta name="description" content="Contact Paws Animal Shelter in Pretoria and Johannesburg. Find our addresses, phone number and email, view the map or send us a message.">
+    <meta name="keywords" content="contact Paws Shelter, animal shelter Pretoria, animal shelter Johannesburg, adoption centre">
+    <meta name="author" content="Paws Shelter">
+    <meta name="robots" content="index, follow">
+    <!-- SEO: the canonical link tells search engines which URL is the main version of this page -->
+    <link rel="canonical" href="https://paws-shelter.netlify.app/contacts.html">
+    <!-- Social media: Open Graph and Twitter tags control the title, text and image shown when this page is shared -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Paws Animal Shelter">
+    <meta property="og:title" content="Contact Paws Animal Shelter | Pretoria &amp; Joburg">
+    <meta property="og:description" content="Contact Paws Animal Shelter in Pretoria and Johannesburg. Find our addresses, phone number and email, view the map or send us a message.">
+    <meta property="og:url" content="https://paws-shelter.netlify.app/contacts.html">
+    <meta property="og:image" content="https://paws-shelter.netlify.app/_images/images/pets/hero-dogs-running.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Security: the Content Security Policy only lets this page load scripts, styles and images from this site and the trusted sources the map needs -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https://cdnjs.cloudflare.com https://tile.openstreetmap.org https://*.tile.openstreetmap.org; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css_assets/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <!-- Local SEO: structured data tells search engines this is an animal shelter, where it is and how to contact it -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AnimalShelter",
+  "name": "Paws Animal Shelter",
+  "url": "https://paws-shelter.netlify.app/",
+  "logo": "https://paws-shelter.netlify.app/_images/images/pets/paws-logo.png",
+  "image": "https://paws-shelter.netlify.app/_images/images/pets/hero-dogs-running.jpg",
+  "description": "Paws Animal Shelter rescues, cares for and rehomes abandoned dogs and puppies in Pretoria.",
+  "email": "info@pawsshelter.co.za",
+  "telephone": "+27113128976",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12 Rescue Road",
+    "addressLocality": "Pretoria",
+    "addressRegion": "Gauteng",
+    "addressCountry": "ZA"
+  },
+  "areaServed": [
+    "Pretoria",
+    "Johannesburg"
+  ]
+}
+    </script>
+    <!-- Page speed: every script uses "defer" so it never blocks the page from displaying -->
+    <script src="js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+    <script src="js/map.js" defer></script>
+    <script src="js/forms.js" defer></script>
+</head>
+<body>
+
+    <!-- Accessibility: lets keyboard and screen-reader users jump past the menu straight to the page content -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ==== Header: logo, main navigation and the Donate button; identical on every page so visitors always know where they are ==== -->
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="_images/images/pets/paws-logo.png" alt="Paws Animal Shelter logo"/>
+            <div>
+                <p class="site-name">Paws Shelter</p>
+                <p class="tagline">Every Paw Deserves a Warm Home</p>
+            </div>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pets.html">Adopt</a></li>
+                <li><a href="enquiries.html">Get Involved</a></li>
+                <li><a href="contacts.html" class="active" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="enquiries.html?type=donate" class="donate-button">Donate</a>
+    </header>
+
+    <main id="main-content" class="page-content">
+
+        <section class="page-header">
+            <h1>Contact Us</h1>
+            <p>Have a question, or want to visit? Reach out to us using the details below.</p>
+        </section>
+
+        <section class="content-block reveal">
+            <h2>Shelter Locations</h2>
+            <p><strong>Main Shelter:</strong> 12 Rescue Road, Pretoria</p>
+            <p><strong>Satellite Adoption Centre:</strong> 45 Companion Street, Johannesburg</p>
+            <p><strong>Phone:</strong> <a href="tel:+27113128976">011 312 8976</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@pawsshelter.co.za">info@pawsshelter.co.za</a></p>
+        </section>
+
+        <!-- INTERACTIVE MAP: js/map.js draws an OpenStreetMap map with Leaflet and adds one marker per shelter; the buttons fly the map to each location -->
+        <section class="content-block reveal">
+            <h2>Find Us</h2>
+            <div class="map-buttons">
+                <button type="button" class="btn-outline" data-map="pretoria">Main Shelter: Pretoria</button>
+                <button type="button" class="btn-outline" data-map="johannesburg">Satellite Centre: Johannesburg</button>
+            </div>
+            <div id="map" class="map" role="region" aria-label="Map showing the Pretoria and Johannesburg shelter locations"></div>
+            <noscript><p>Turn on JavaScript to see the interactive map. Our locations: 12 Rescue Road, Pretoria and 45 Companion Street, Johannesburg.</p></noscript>
+            <p class="map-note">Map data &copy; OpenStreetMap contributors. Pins mark the approximate position of each city location.</p>
+        </section>
+
+        <!-- CONTACT FORM: after validation, js/forms.js builds an email addressed to the recipient set at the top of forms.js and shows it so the visitor can send it from their own email app -->
+        <section class="content-block reveal">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" action="#" method="post" data-validate novalidate>
+
+                <div class="form-row">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" data-label="Full Name" data-rule="name" required maxlength="60" autocomplete="name"/>
+                    <span class="error-message" id="name-error" aria-live="polite"></span>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" data-label="Email Address" data-rule="email" required maxlength="100" autocomplete="email"/>
+                    <span class="error-message" id="email-error" aria-live="polite"></span>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number (optional)</label>
+                    <input type="tel" id="phone" name="phone" data-label="Phone Number" data-rule="phone" maxlength="20" autocomplete="tel" inputmode="tel"/>
+                    <small class="hint" id="phone-hint">South African number, e.g. 012 345 6789 or 082 123 4567</small>
+                    <span class="error-message" id="phone-error" aria-live="polite"></span>
+                </div>
+                <div class="form-row">
+                    <label for="message-type">Type of message</label>
+                    <select id="message-type" name="message-type" data-label="Type of message" required><option value="">-- Please choose --</option><option value="General question">General question</option><option value="Adoption">Adoption</option><option value="Volunteering">Volunteering</option><option value="Donation">Donation</option><option value="Feedback">Feedback or complaint</option></select>
+                    <span class="error-message" id="message-type-error" aria-live="polite"></span>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" data-label="Message" data-rule="message" required minlength="10" maxlength="500" data-counter></textarea>
+                    <span class="char-count" id="message-count" aria-hidden="true"></span>
+                    <span class="error-message" id="message-error" aria-live="polite"></span>
+                </div>
+
+                <button type="submit">Create Email</button>
+            </form>
+
+            <div id="email-preview" class="response-panel" tabindex="-1" hidden>
+                <h3>Your email is ready</h3>
+                <p>Check the details below, then open it in your email app. It is addressed to <strong id="email-to"></strong>.</p>
+                <p><strong>Subject:</strong> <span id="email-subject"></span></p>
+                <pre id="email-body"></pre>
+                <div class="lb-actions">
+                    <a id="send-email" class="btn-primary" href="mailto:info@pawsshelter.co.za">Open in email app</a>
+                    <button type="button" id="copy-email" class="btn-outline">Copy email text</button>
+                    <button type="button" id="edit-email" class="btn-outline">Edit message</button>
+                </div>
+                <p id="copy-status" class="response-note" role="status"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====== Footer: copyright, repeat of the main links (helps internal linking) and the shelter's email ====== -->
+    <footer>
+        <p>&copy; 2026 Paws Shelter. All rights reserved.</p>
+        <p class="footer-links"><a href="index.html">Home</a> <a href="about.html">About Us</a> <a href="pets.html">Adopt</a> <a href="enquiries.html">Get Involved</a> <a href="contacts.html">Contact</a> <a href="mailto:info@pawsshelter.co.za">info@pawsshelter.co.za</a></p>
+    </footer>
+
+</body>
+</html>
